@@ -339,3 +339,47 @@ donate_url:
   type: text
   default: ""
   visible: true
+
+use_data_ai_libs:
+  message: Do you want to include Data/AI libraries in your project?
+  help: https://osl-incubator.github.io/scicookie/guide/#data-ai-libraries
+  type: confirm
+  default: "False"
+  visible: true
+
+data_ai_libs:
+  message: Select Data/AI libraries to include
+  help: https://osl-incubator.github.io/scicookie/guide/#data-ai-libraries
+  type: multiple-choices
+  choices:
+    - altair
+    - beautifulsoup4
+    - bokeh
+    - dash
+    - folium
+    - ibis-framework
+    - jupyterlab
+    - langchain
+    - matplotlib
+    - nltk
+    - numpy
+    - openai
+    - pandas
+    - panel
+    - plotly
+    - polars
+    - pytorch(cpu)
+    - pytorch(gpu)
+    - quarto-cli
+    - rago
+    - requests
+    - scikit-learn
+    - scipy
+    - scrapy
+    - seaborn
+    - spacy
+    - statsmodels
+    - tensorflow
+    - xgboost
+
+  visible: ${{ use_data_ai_libs }}

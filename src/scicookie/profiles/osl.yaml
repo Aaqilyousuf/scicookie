@@ -128,3 +128,40 @@ communication_link:
 
 donate_url:
   visible: true
+
+use_data_ai_libs:
+  default: "False"
+  visible: true
+
+data_ai_libs:
+  choices:
+    - altair
+    - beautifulsoup4
+    - bokeh
+    - dash
+    - folium
+    - ibis-framework
+    - jupyterlab
+    - langchain
+    - matplotlib
+    - nltk
+    - numpy
+    - openai
+    - pandas
+    - panel
+    - plotly
+    - polars
+    - pytorch(cpu)
+    - pytorch(gpu)
+    - quarto-cli
+    - rago
+    - requests
+    - scikit-learn
+    - scipy
+    - scrapy
+    - seaborn
+    - spacy
+    - statsmodels
+    - tensorflow
+    - xgboost
+  visible: ${{ use_data_ai_libs }}

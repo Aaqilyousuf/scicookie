@@ -127,6 +127,99 @@ Link: {{ cookiecutter.communication_link }}
 
 [![Donate]({{ cookiecutter.donate_url }})]({{ cookiecutter.donate_url }})
 {% endif %}
+
+{% if cookiecutter.use_data_ai_libs %}
+## 📊 Data / AI Libraries
+
+You have selected the following data science & AI libraries:
+
+{% if cookiecutter.use_altair == "yes" %}
+- altair
+{% endif %}
+{% if cookiecutter.use_beautifulsoup4 == "yes" %}
+- beautifulsoup4
+{% endif %}
+{% if cookiecutter.use_bokeh == "yes" %}
+- bokeh
+{% endif %}
+{% if cookiecutter.use_dash == "yes" %}
+- dash
+{% endif %}
+{% if cookiecutter.use_folium == "yes" %}
+- folium
+{% endif %}
+{% if cookiecutter.use_ibis_framework == "yes" %}
+- ibis-framework
+{% endif %}
+{% if cookiecutter.use_jupyterlab == "yes" %}
+- jupyterlab
+{% endif %}
+{% if cookiecutter.use_langchain == "yes" %}
+- langchain
+{% endif %}
+{% if cookiecutter.use_matplotlib == "yes" %}
+- matplotlib
+{% endif %}
+{% if cookiecutter.use_nltk == "yes" %}
+- nltk
+{% endif %}
+{% if cookiecutter.use_numpy == "yes" %}
+- numpy
+{% endif %}
+{% if cookiecutter.use_openai == "yes" %}
+- openai
+{% endif %}
+{% if cookiecutter.use_pandas == "yes" %}
+- pandas
+{% endif %}
+{% if cookiecutter.use_panel == "yes" %}
+- panel
+{% endif %}
+{% if cookiecutter.use_plotly == "yes" %}
+- plotly
+{% endif %}
+{% if cookiecutter.use_polars == "yes" %}
+- polars
+{% endif %}
+{% if cookiecutter.use_pytorch_cpu == "yes" %}
+- pytorch(cpu)
+{% endif %}
+{% if cookiecutter.use_pytorch_gpu == "yes" %}
+- pytorch(gpu)
+{% endif %}
+{% if cookiecutter.use_quarto_cli == "yes" %}
+- quarto-cli
+{% endif %}
+{% if cookiecutter.use_rago == "yes" %}
+- rago
+{% endif %}
+{% if cookiecutter.use_requests == "yes" %}
+- requests
+{% endif %}
+{% if cookiecutter.use_scikit_learn == "yes" %}
+- scikit-learn
+{% endif %}
+{% if cookiecutter.use_scipy == "yes" %}
+- scipy
+{% endif %}
+{% if cookiecutter.use_scrapy == "yes" %}
+- scrapy
+{% endif %}
+{% if cookiecutter.use_seaborn == "yes" %}
+- seaborn
+{% endif %}
+{% if cookiecutter.use_statsmodels == "yes" %}
+- statsmodels
+{% endif %}
+{% if cookiecutter.use_tensorflow == "yes" %}
+- tensorflow
+{% endif %}
+{% if cookiecutter.use_xgboost == "yes" %}
+- xgboost
+{% endif %}
+
+{% endif %}
+
 ## Features
 
 TBD

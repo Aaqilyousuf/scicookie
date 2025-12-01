@@ -24,6 +24,7 @@ The structure of the guide is as follows:
     - [Testing framework](#testing-framework)
     - [Static analysis of shell scripts](#static-analysis-of-shell-scripts)
     - [Pre-commit verification](#pre-commit-verification)
+  - [Integration with Data Science & AI libraries](#integration-with-data-science-ai-libraries)
   - [Integration with DevOps tools](#integration-with-devops-tools)
   - [Automation tools](#automation-tools)
   - [Project team](#project-team)
@@ -776,6 +777,40 @@ to the tools you have selected in TUI).
 This is configured using a `.pre-commit-config.yaml` file in the repository,
 which sets the hooks to be executed before each commit. You can check the
 supported hooks using this link https://pre-commit.com/hooks.html.
+
+## Integration with Data Science & AI libraries
+
+Integrating data science and AI libraries into a Python project can unlock
+capabilities such as numerical analysis, interactive dashboards, geospatial
+mapping, machine learning, deep learning, and large language model (LLM)
+orchestration. However, most scaffolding tools include these by default, even
+when they are not required. This leads to larger environments, slower dependency
+resolution, and unnecessary packages in projects that do not use them.
+
+SciCookie solves this by keeping **Data and AI libraries optional by design**.
+This means you decide whether to include them, and if so, which ones. If you
+select `yes` for the parent question, the interface will reveal the library
+selection step. If you select `no` or skip, the UI remains clean and no extra
+dependencies are added.
+
+SciCookie currently supports a wide range of popular libraries across multiple
+domains:
+
+- **Visualization platforms** like **Altair, Matplotlib, Seaborn, Plotly,** and
+  **Bokeh**
+- **Geospatial mapping** through **Folium**
+- **Data query abstraction** using **Ibis Framework**
+- **Notebook ecosystems** like **JupyterLab**
+- **Machine Learning frameworks** including **Scikit-Learn, SciPy, Statsmodels,
+  XGBoost,** and **TensorFlow**
+- **Deep Learning** via **PyTorch ecosystem**, with separate support for **CPU
+  or GPU builds**
+- **Natural Language Processing (NLP)** toolkits such as **NLTK** and **SpaCy**
+- **LLM application tooling** using **LangChain** and **OpenAI Python clients**
+- **Documentation utilities** like **Quarto CLI**
+- **Web automation & scraping** support through **Scrapy** and **Requests**
+
+These libraries will be added to your project dependencies automatically.
 
 ## Integration with DevOps tools
 
